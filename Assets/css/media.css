@@ -15,6 +15,9 @@
     .w-md-6{
         width: 50%;
     }
+    .w-md-10{
+        width: 81%;
+    }
     .btn{
         display: inline-block;
     }
