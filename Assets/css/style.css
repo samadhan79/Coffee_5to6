@@ -1,0 +1,461 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: #443;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.w-4 {
+    width: 25%;
+}
+
+.w-6 {
+    width: 50%;
+    padding: 10px;
+
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.vh {
+    height: 100vh;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-spacebetween {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.fa-bars{
+    display: none;
+}
+.header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px gray;
+    padding: 10px;
+}
+
+.header .logo {
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+.header nav a {
+    font-size: 20px;
+    margin: 10px;
+    color: var(--main-color);
+    position: relative;
+}
+
+.header nav a::after {
+    content: "";
+    border-right: 3px solid gray;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: -10px;
+
+}
+
+.btn {
+    font-size: 20px;
+    color: var(--main-color);
+    border: 3px solid var(--main-color);
+    padding: 10px;
+    border-radius: 30px 5px 30px 5px;
+    transition: all 0.5s linear;
+}
+
+.btn:hover {
+    border: 3px dotted var(--main-color);
+    border-radius: 5px 30px 5px 30px;
+}
+
+/* Home */
+.home {
+    min-height: 100vh;
+    background-image: url(../Images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content h3 {
+    font-size: 70px;
+    color: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-image {
+    padding-top: 220px;
+    position: relative;
+    animation-name: imgcupanimate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.home-image img {
+    height: 350px;
+    margin-left: 200px;
+
+
+}
+
+@keyframes imgcupanimate {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+.image-slider {
+    text-align: center;
+}
+
+.image-slider img {
+    height: 90px;
+}
+
+.image-slider img:hover {
+    transform: translateY(-20px);
+}
+
+/* Home End */
+
+
+/* About */
+
+.about {
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.image {
+    position: relative;
+
+}
+
+
+.image img {
+    height: 500px;
+    border-radius: 50%;
+    animation-name: aboutimg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes aboutimg {
+
+    0%,
+    100% {
+        transform: scale(.9);
+        border-radius: 84% 16% 88% 12% / 11% 85% 15% 89%;
+    }
+
+    50% {
+        transform: scale(.8);
+        border-radius: 30% 70% 30% 70% / 70% 13% 87% 30%;
+
+    }
+
+}
+
+.about-content h3 {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.about-content p {
+    font-size: 15px;
+    color: var(--main-color);
+    line-height: 2;
+    padding: 15px;
+}
+
+.icon-container {
+    margin-top: 20px;
+    display: flex;
+}
+
+.icon-container .icons {
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.icon-container .icons h3 {
+    color: var(--main-color);
+}
+
+.heading {
+    font-size: 120px;
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 0.5px var(--main-color);
+}
+
+.heading span {
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    color: var(--main-color);
+}
+
+/* About End */
+
+
+/* Menu */
+.menu {
+    /* height: 100vh; */
+    background-image: url(../Images/menu-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box-container .box {
+    border: 1px solid gray;
+    width: 40%;
+    padding: 30px 30px;
+    display: flex;
+    border-radius: 60px 10px 60px 10px;
+    margin: 30px 50px;
+}
+
+.box-container .box img {
+    margin-left: -70px;
+
+}
+
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.menu-container:hover {
+    border: 1px dotted var(--main-color);
+    border-radius: 10% 0 10% 0;
+}
+
+.menu-container img {
+    margin-left: -50px;
+    height: 100px;
+}
+
+.menu-content h3 {
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.menu-content p {
+    color: var(--main-color);
+    line-height: 1.5;
+}
+
+/* Menu End */
+
+
+/* Review */
+
+.review {
+    min-height: 70vh;
+}
+
+.review-container {
+    border: 2px solid var(--main-color);
+    border-radius: 0px 30px 0px 30px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    transition: 1s linear all;
+
+}
+
+.review-container:hover .fa-quote-left {
+    transform: translateY(-100px);
+    transition: 0.2s linear all;
+}
+
+.review-container:hover .fa-quote-right {
+    transform: translateY(100px);
+    transition: 0.2s linear all;
+}
+
+.review-container .quote {
+    font-size: 100px;
+    color: #ccc;
+}
+
+.review-container .fa-quote-left {
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+.review-container .fa-quote-right {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+.review-container img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.review-container h3 {
+    color: var(--main-color);
+    line-height: 1.5;
+    font-size: 30px;
+}
+
+.review-container p {
+    color: var(--main-color);
+    line-height: 1.5;
+}
+
+/* Review End */
+
+
+/* Booking */
+.booking {
+    /* height: 100vh; */
+    background-image: url(../Images/book-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.booking form {
+    border: 2px solid var(--main-color);
+    border-radius: 10% 90% 12% 88% / 91% 7% 93% 9%;
+    padding: 50px;
+
+
+}
+
+.booking form .form-control {
+    margin: 8px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background: none;
+}
+
+button {
+
+    border: 1px solid green;
+    background: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+/* Booking */
+
+
+/* footer */
+
+.footer {
+    /* height: 100vh; */
+
+}
+
+.footer .box {
+    padding-top: 30px;
+}
+
+.footer .box a {
+    display: block;
+    color: var(--main-color);
+    font-size: 15px;
+    margin: 10px;
+}
+
+.footer .box a:hover i {
+    transition: 0.5s all linear;
+    margin-right: 25px;
+}
+
+
+
+.footer .box a i {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-content span {
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+/* End Footer */

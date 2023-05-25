@@ -1,0 +1,49 @@
+@media (max-width:768px) {
+    .fa-bars {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .w-md-12{
+        width: 100%;
+    }
+    .w-md-6{
+        width: 50%;
+    }
+    .btn{
+        display: inline-block;
+    }
+    .home{
+        padding-top: 100px;
+        text-align: center;
+    }
+    .home-image{
+        padding-top: 80px;
+    }
+    .home-image img{
+        height: 200px;
+        margin: auto;
+    }
+    .home-content h3{
+        font-size: 50px;
+    }
+
+    .heading{
+        font-size: 50px;
+    }
+    .heading span{
+        font-size: 25px;
+    }
+
+    .image img {
+        width: 100%;
+    }
+    
+
+    
+}
